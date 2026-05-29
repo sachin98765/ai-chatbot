@@ -2,6 +2,15 @@
 
 A secure, session-based AI chatbot built with PHP, MySQL, and OpenRouter. Users can sign up, log in, view conversation history in a sidebar, and chat with an NVIDIA Nemotron-powered assistant.
 
+
+## 📸 Website Screenshot
+
+<img width="1918" height="949" alt="image" src="https://github.com/user-attachments/assets/6ef85853-f5fd-4b23-9c0d-dd94dca3f717" />
+
+<img width="1913" height="946" alt="image" src="https://github.com/user-attachments/assets/240ed063-12ea-425b-b7c2-e7c818036521" />
+
+---
+
 ## 🔥 Project Idea
 
 This project is a full-stack AI chat application designed to deliver a modern experience with:
@@ -96,56 +105,6 @@ $api_key = "---------------------------------------";
 4. Type your message and press **Send**.
 5. Responses will be stored in the database automatically.
 
-## 📌 Notes
-
-- The Google authentication button is a UI placeholder only.
-- Chat history is stored per user.
-- The sidebar shows the first user message preview for each history entry.
-- New conversations can be started with the **New Chat** button.
-
-## 🎓 Interview Q&A
-
-### Q: What problem does this project solve?
-
-A: It provides a user-based chatbot experience with persistent history, allowing users to save and revisit past conversations instead of starting from scratch.
-
-### Q: What are the main components?
-
-A: Frontend UI (`index.php`, `style.css`, `app.js`), authentication backend (`auth.php`), chat backend (`chatbot.php`), database helper (`db.php`), and history API (`history.php`).
-
-### Q: How does user authentication work?
-
-A: Users sign up with email, username, and password. Passwords are hashed using `password_hash` and stored in MySQL. Sessions are created on successful login.
-
-### Q: How is chat history stored?
-
-A: Each chat belongs to a conversation record in `ai_conversations`, and every message is stored in `ai_messages`. The app loads history for the logged-in user.
-
-### Q: How are conversations displayed?
-
-A: The left sidebar shows the latest conversations sorted by `updated_at`, with the first user query shown as a short preview.
-
-### Q: What model is used?
-
-A: The app uses the NVIDIA Nemotron free model placeholder via OpenRouter's chat completion API.
-
-### Q: Is Google login implemented?
-
-A: Not yet. The button is a UI placeholder only.
-
-### Q: What security measures are included?
-
-A: Session-based login, password hashing, request validation, and user-specific history access.
-
-### Q: What are the next improvements?
-
-A:
-
-- Add real Google OAuth
-- Add password reset flow
-- Add conversation titles and tags
-- Add message streaming
-- Add admin user management
 
 ## 📊 Project Report
 
