@@ -1,0 +1,32 @@
+# PHP
+*.log
+*.cache
+*.env
+.env.local
+/vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Node
+node_modules/
+
+# Temporary
+*.tmp
+*.swp
+*~
+
+# Database backups
+*.sql.bak
+*.sqlite
+*.db
+
+deploy.txt
+explanation-project.txt
